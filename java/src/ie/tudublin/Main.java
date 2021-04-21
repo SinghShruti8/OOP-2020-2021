@@ -104,9 +104,38 @@ public class Main
         processing.core.PApplet.runSketch( a, new YASC());
     }
 
+    public void strings()
+    {
+        String s = "I may be hungry, but I sure ain't weird.";
+
+        String ss = s.substring(9, 15);
+        System.out.println(ss);
+
+        System.out.println(s.charAt(0));
+        System.out.println(s.toLowerCase());
+
+        System.out.println(s.indexOf("hungry"));
+        System.out.println(s.lastIndexOf("e"));
+
+        for(int i = s.length() - 1; i >= 0; i--)
+        {
+            System.out.println(s.charAt(i));
+            System.out.println(s.substring(i, i+1));
+        }
+
+        for(String sss:s.split(" "))
+        {
+            System.out.println(sss);
+        }
+    }
+
     public static void main(String[] args)
     {
         Main main = new Main();
+<<<<<<< HEAD
         main.colorfulLife();
+=======
+        main.strings();
+>>>>>>> def7d53903800f1a75aabb688c6c9790af776b25
     }
 } 
